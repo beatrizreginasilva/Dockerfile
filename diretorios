@@ -1,0 +1,20 @@
+mkdir -p /usr/src/appjava
+
+cat <<EOL > /usr/src/appjava/Eu.java
+public class Eu {
+    public static void main(String[] args) {
+        while (true) {
+            System.out.println("Beatriz");
+            try {
+                Thread.sleep(300000); 
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
+    }
+}
+EOL
+
+mkdir -p /usr/src/projjava
+
+cd /usr/src/appjava
