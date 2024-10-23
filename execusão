@@ -1,0 +1,3 @@
+docker exec javaaula javac /usr/src/projjava/Soma.java
+
+docker exec javaaula java -cp /usr/src/projjava Soma 10 20
